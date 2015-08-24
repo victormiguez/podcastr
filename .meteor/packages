@@ -7,3 +7,5 @@
 meteor-platform
 http
 fourseven:scss
+accounts-password
+iron:router

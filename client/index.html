@@ -3,42 +3,16 @@
 </head>
 
 <body>
-  {{> podcasts}}
 </body>
 
-<template name="podcasts">
-
-  <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s3">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">Podcast name</label>
-        </div>
-
-        <div class="input-field col s3">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">Podcast name</label>
-        </div>
-      </div>
-    </form>
-  </div>
-
-
-  <div class="row">
-    {{#each podcastsLists}}
-      <div class="col s12 m3">
-        <div class="card">
-          <div class="card-image">
-            <img src="{{artworkUrl600}}">
-            <span class="card-title">{{artistName}}</span>
-          </div>
-          <div class="card-content">
-            <a href="#">{{artistName}}</a>
-          </div>
-        </div>
-      </div>
-    {{/each}}
-  </div>
-
+<template name="navbar">
+  <nav class="row">
+    <div class="col s12 nav-wrapper orange darken-1">
+      <a href="/" class="brand-logo">Podcastr</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/sign-up">Sign up</a></li>
+        <li><a href="/sign-in">Sign in</a></li>
+      </ul>
+    </div>
+  </nav>
 </template>

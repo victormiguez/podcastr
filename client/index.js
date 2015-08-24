@@ -1,3 +1,5 @@
+'use strict';
+
 Template.podcasts.helpers({
   podcastsLists: function () {
     return Session.get('podcastsLists');
@@ -12,3 +14,10 @@ Template.podcasts.onRendered(function () {
     Session.set('podcastsLists', res.data.results);
   });
 });
+
+Template.podcasts.events({
+  'submit #podcast-search': function (event) {
+    let name = event.target.name.value;
+
+  }
+})

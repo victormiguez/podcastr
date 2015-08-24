@@ -1,0 +1,28 @@
+<template name="podcasts">
+  <div class="row">
+    <form class="col s12" id="podcast-search">
+      <div class="row">
+        <div class="input-field col s3">
+          <input id="name" name="name" type="text" class="validate">
+          <label for="name">Podcast name</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="row">
+    {{#each podcastsLists}}
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{artworkUrl600}}">
+            <span class="card-title">{{artistName}}</span>
+          </div>
+          <div class="card-content">
+            <a href="#">{{artistName}}</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</template>
