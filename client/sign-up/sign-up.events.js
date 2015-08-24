@@ -14,8 +14,8 @@ Template.signUp.events({
       }
     }, function (err) {
       if (err){
-        Session.set('message', 'There was an error. Please try again.')
-        Session.set('error', err);
+        Session.set('message', err.reason)
+        Session.set('error', true);
         return;
       }
       Router.go('/dashboard');

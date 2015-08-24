@@ -4,6 +4,10 @@
   <h2>Sign up</h2>
 
   <div class="row">
+    {{#if error}}
+      {{message}}
+    {{/if}}
+    
     <form class="row col s4" id="sign-up">
       <div class="input-field">
         <input id="name" name="name" type="text" class="validate">
