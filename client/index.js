@@ -18,6 +18,5 @@ Template.podcasts.onRendered(function () {
 Template.podcasts.events({
   'submit #podcast-search': function (event) {
     let name = event.target.name.value;
-
   }
 })
