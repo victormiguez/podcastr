@@ -9,10 +9,15 @@
   <nav class="row">
     <div class="col s12 nav-wrapper orange darken-1">
       <a href="/" class="brand-logo">Podcastr</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/sign-up">Sign up</a></li>
-        <li><a href="/sign-in">Sign in</a></li>
-      </ul>
+      
+      {{#if currentUser}}
+        <button class="right btn">Settings</button>        
+      {{else}}
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/sign-up">Sign up</a></li>
+          <li><a href="/sign-in">Sign in</a></li>
+        </ul>
+      {{/if}}
     </div>
   </nav>
 </template>

@@ -1,5 +1,26 @@
-<template name="sign-up">
+<template name="signUp">
   {{> navbar}}
 
-  <h1>Sign up</h1>
+  <h2>Sign up</h2>
+
+  <div class="row">
+    <form class="row col s4" id="sign-up">
+      <div class="input-field">
+        <input id="name" name="name" type="text" class="validate">
+        <label for="name">Name</label>
+      </div>
+
+      <div class="input-field">
+        <input id="email" name="email" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+
+      <div class="input-field">
+        <input id="password" name="password" type="password" class="validate">
+        <label for="password">Password</label>
+      </div>
+
+      <button class="btn">Submit</button>
+    </form>
+  </div>
 </template>
