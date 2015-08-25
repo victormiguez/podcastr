@@ -1,0 +1,14 @@
+.dashboard-navigation {
+  @extend .col, .s2;
+  height: 100%;
+  position: fixed;
+  padding: 0;
+}
+
+.dashboard-navigation-link {
+  display: block;
+}
+
+.dashboard-content {
+  @extend .col, .s10, .offset-s2;
+}
