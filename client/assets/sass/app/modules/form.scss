@@ -1,0 +1,10 @@
+.form-sign-up,
+.form-sign-in {
+  width: 33.33333%;
+  float: none;
+  margin: 0 auto;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}

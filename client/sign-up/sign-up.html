@@ -1,14 +1,14 @@
 <template name="signUp">
   {{> layout}}
 
-  <h2>Sign up</h2>
+  <h2 class="center">Sign up</h2>
 
   <div class="row">
     {{#if error}}
       {{message}}
     {{/if}}
     
-    <form class="row col s4" id="sign-up">
+    <form class="form-sign-up" id="sign-up">
       <div class="input-field">
         <input id="name" name="name" type="text" class="validate">
         <label for="name">Name</label>
